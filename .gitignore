@@ -169,3 +169,8 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+# Custom exclusions
+data/*.mat  # Ignore all .mat files in the data directory
+results/    # Ignore the results directory
+*.log       # Ignore all log files
