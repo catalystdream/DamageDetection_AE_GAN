@@ -1,7 +1,7 @@
 # Damage Detection Using Autoencoder (AE) and Generative Adversarial Network (GAN) for nonlinear systems
 
-This repository contains the code implementation for **Deep learning architectures for data-driven damage
-detection in nonlinear dynamic systems under random vibrations** based on the methods described in the journal paper.
+This repository contains the code implementation for **[Deep learning architectures for data-driven damage
+detection in nonlinear dynamic systems under random vibrations](https://rdcu.be/d5X7l)** based on the methods described in the journal paper.
 
 
 ## Introduction
@@ -9,19 +9,29 @@ Structural damage detection is a critical task in engineering. This project uses
 - 1-DOF Duffing system
 - 2-DOF Duffing system
 - Vibration isolator with super elastic hysteresis and negative stiffness
+
 The damage time-series dataset for these systems were obtained by systematically reducing the stiffness of the system. Finally the AE, GAN architectures were tested on a experimental dataset of a Magneto-elastic clamped beam system.
 
 Key contributions of the paper:
 - AE for feature extraction and damage detection.
-- Discriminator- part of GAN for detecting damaged time series signals.
+- Discriminator - part of GAN for detecting damaged time series signals.
+- Comparison of results for difeferent nonlinear systems.
 
 ## Included in this repo
 - 1D Autoencoder and 1D GAN for time-series data for a 2-DOF Duffing oscillator.
 - Includes the [data](https://drive.google.com/file/d/1BZEsVKchV6-oSNpYNMTaZ1Tm0a-lnWl3/view?usp=share_link) for the 2DOF Duffing oscillator.
 - Provides visualization of results (e.g., loss curves, reconstructed signals).
 
+## Results
+Results show the comparison of AE and GAN damge detection for a 2-DOF Duffing system.
+<img width="1367" alt="CuCombined2DOF1" src="https://github.com/user-attachments/assets/1d2850af-8efb-46cb-870a-d14ce6cbbce1" />
 
 ## Citation
 If you use this code, please cite:
-```bash
-@article{Joseph_Quaranta_Carboni_Lacarbonara_2024, title={Deep learning architectures for data-driven damage detection in nonlinear dynamic systems under random vibrations}, volume={112}, ISSN={1573-269X}, DOI={10.1007/s11071-024-10270-1}, number={23}, journal={Nonlinear Dynamics}, author={Joseph, Harrish and Quaranta, Giuseppe and Carboni, Biagio and Lacarbonara, Walter}, year={2024}, month=dec, pages={20611–20636} }
+<pre>
+@article{Joseph_Quaranta_Carboni_Lacarbonara_2024,
+  title={Deep learning architectures for data-driven damage detection in nonlinear dynamic systems under random vibrations},
+  volume={112}, ISSN={1573-269X}, DOI={10.1007/s11071-024-10270-1}, number={23}, journal={Nonlinear Dynamics},
+  author={Joseph, Harrish and Quaranta, Giuseppe and Carboni, Biagio and Lacarbonara, Walter},
+  year={2024}, month=dec, pages={20611–20636} }
+</pre>
